@@ -7,26 +7,32 @@ import Form from '../components/Form.jsx';
 import Topnav from '../components/Topnav.jsx';
 import Header from '../components/Header.jsx';
 
-const router = createBrowserRouter([
+// Fix: Add basename to handle GitHub Pages
+const router = createBrowserRouter(
+  [
+    {
+      path: '/',
+      element: <App />,
+    },
+    {
+      path: '/formSubmission',
+      element: (
+        <>
+          <Topnav
+            span={'Enroll Now!'}
+            text={' Take the Test & Study for FREE for a Whole Year!'}
+            icons={'🚀📚'}
+          />
+          <Header />
+          <Form />
+        </>
+      ),
+    },
+  ],
   {
-    path: '/',
-    element: <App />,
-  },
-  {
-    path: '/formSubmission',
-    element: (
-      <>
-        <Topnav
-          span={'Enroll Now!'}
-          text={' Take the Test & Study for FREE for a Whole Year!'}
-          icons={'🚀📚'}
-        />
-        <Header />
-        <Form />
-      </>
-    ),
-  },
-]);
+    basename: '/Readers-Website', // Add this line
+  }
+);
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>

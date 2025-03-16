@@ -24,9 +24,9 @@ const Hero = () => {
           <div className="relative ">
             {' '}
             <img
-              src="../src/assets/girl-image.png"
+              src="https://img.freepik.com/free-photo/sitting-floor-excited-boy-reading-book_23-2147854098.jpg?t=st=1742143050~exp=1742146650~hmac=7e5f792f1265f99cef64a03a6d763fb6de9ae678dc811a5a92ecfc34f7a5cde1&w=740"
               alt="female-student"
-              className="w-72 rounded-2xl"
+              className="w-72 h-[24rem] rounded-2xl"
             />
             <div className="absolute  shadow-lg rounded-3xl le  left-5 bottom-[-90px]  lg:left-[-150px] lg:bottom-[-30px]  bg-white  flex items-center py-2  flex-col">
               <h2 className="font-bold text-center">

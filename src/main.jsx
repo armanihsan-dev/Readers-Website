@@ -40,7 +40,7 @@ createRoot(document.getElementById('root')).render(
       domain="dev-rvpjvy7rr4hnc4k8.us.auth0.com"
       clientId="kh01dvMRtXjoaJWR8ajS791EyZFncpdf"
       authorizationParams={{
-        redirect_uri: window.location.origin,
+         redirectUri: 'https://armanihsan-dev.github.io/Readers-Website/',
       }}
     >
       <RouterProvider router={router} />
